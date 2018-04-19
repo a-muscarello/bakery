@@ -1,6 +1,7 @@
 require 'sinatra'
 require 'sendgrid-ruby'
 include SendGrid
+
 require_relative 'my_bakery.rb'
 
 get '/' do
@@ -9,6 +10,7 @@ end
 
 
 get '/products' do
+    @cookies = $nenz_bakery.cookies
     erb :products
 end
 
@@ -54,4 +56,5 @@ post '/mailing_list' do
 
     response = sg.client.mail._('send').post(request_body: mail.to_json)
     puts response.status_code
+    erb :mailing_list
 end
