@@ -14,18 +14,19 @@
 
 	</head>
 	<body>
-
+		<div class="container" id="title">
+			<div id="title-text">
+				<h1>Friendly Bakery</h1>
+				<p><em>Truly sublime products to indulge all your senses</em></p>
+			</div>
+		</div>
+		
+		<div id="picker_box"> 
 		<header class="container">
 			<div class="logo-background container">
-				<img class="responsive-img" src="images/bakery/cupcake.jpg">
+				<img class="responsive-img" src="images/bakery/cupcake3.jpg">
 			</div>
 
-			<div class="container" id="title">
-				<div id="title-text">
-					<h1>Nenz Bakery</h1>
-					<p><em>Truly sublime products to indulge all your senses</em></p>
-				</div>
-			</div>
 		</header>
 
 		<nav id="navbar">
@@ -44,20 +45,32 @@
 <%= yield %>
 
   
-		<footer>
-			<div class="mediainfo container">
+	<footer class="page-footer">
+		<div class="container">
+		<div class="row">
+		<h5 class="footer-text">Contact Us</h5>
+			<div >
+				<ul>
+					<li class="col s4">Address: <br> 212 Main Street <br> New York NY 10038</li>
+					<li class="col s4">Telephone: <br> 917 545 3282</li>
+					<li class="col s4">Hours: <br> M-F 6:30 AM - 8 PM <br> Sat-Sun 9 AM - 7 PM</li>
+				</ul>
+			</div>	
+		</div>
+		</div>
 
+		<div class="footer-copyright">© 2018 Copyright Friendly Bakery
+		<div class="mediainfo container">
 			<a href="https://www.facebook.com/" class="fa fa-facebook"></a>
-
 			<a href="https://twitter.com/" class="fa fa-twitter"></a>
-
-			<a href="https://www.instagram.com/" class="fa fa-instagram"></a>         
-
-			<p>Copyright Nenz Bakery 2018. All rights reserved.</p>
-		</footer>
+			<a href="https://www.instagram.com/" class="fa fa-instagram"></a>  
+		</div>
+	</div>
+	</footer>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
 
 		<script type="text/javascript" src="main.js"></script>
+		</div>
 	</body>
 </html>

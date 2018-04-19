@@ -23,50 +23,47 @@ end
 
 
 class BakedGoods
-    attr_accessor :type, :name, :image, :description, :price
+    attr_accessor :type, :name, :image, :price
 
-    def initialize (type, name, image, description, price)
+    def initialize (type, name, image, price)
         @type = type
         @name = name
         @image = image
-        @description = description
         @price = price
     end
 end
 
     
 
-class Mailing_list
-    def initialize(customer_name, customer_email)
-        @customer_name = customer_name
-        @customer_email = customer_email
-        this.mailing_list =[:customer_name][:customer_email]
-        puts "Join our mailing list"
-        puts "Never miss our specials and updates!"
-    end  
-end
+red_velvet = BakedGoods.new('cake', 'Red Velvet Cake', 'images/cake/redvelvet.jpg', '$49.00/each')
+linzer_tart = BakedGoods.new('cookies', 'Linzer Tarts', 'images/cookies/sweet.jpg', '$14.50/half dozen')
+oatmeal_muffin = BakedGoods.new('muffins', 'Oatmeal Muffins', 'images/muffins/oat.jpg', '$4.50/each')
+sesame_bread = BakedGoods.new('bread', 'Sesame Seed Bread', 'images/bread/sesame.jpg', '$7.50/loaf')
+raspberry_chocolate = BakedGoods.new('cake', 'Raspberry Chocolate Cake', 'images/cake/sweet.jpg', '$52.00 each')
+assorted_bread = BakedGoods.new('bread', 'Assorted Bread', 'images/bread/bread4.jpg', '$7.50/loaf')
+chocolate_muffin = BakedGoods.new('muffins', 'Chocolate Muffin', 'images/muffins/choco.jpg', '$4.50/each')
+vanilla_muffin =  BakedGoods.new('muffins', 'Cream Vanilla Muffin', 'images/muffins/cream.jpg', '$4.50/each')
+cranberry_muffin = BakedGoods.new('muffins', 'Cranberry Muffin', 'images/muffin/cranberry.jpg', '$4.50/each')
+chocolate_cupcake = BakedGoods.new('cake', 'Chocolate Cupcake', 'images/cake/cupcake2.jpg', '$4.50/each')
+green_tea = BakedGoods.new('cookies', 'Green Tea Cookies', 'images/cookies/green.jpg', '$8.50/half dozen')
+macrons = BakedGoods.new('cookies', 'Macrons', 'images/cookie/macron.jpg', '$10.50/half dozen')
+baguette = BakedGoods.new('bread', 'French Baguette', 'images/cake/sweet.jpg', '$4.50/each')
+whole_wheat_rolls = BakedGoods.new('bread', 'Whole Wheat Rolls', 'images/cake/sweet.jpg', '$3.00/2 rolls')
+vanilla_cupcakes = BakedGoods.new('cake', 'Cupcakes', 'images/cake/sweet.jpg', '$5.50/each')
 
-red_velvet = BakedGoods.new('cake', 'Red Velvet Cake', 'images/cake/redvelvet.jpg', 'Made to order.', '$49.00/each')
-linzer_tart = BakedGoods.new('cookies', 'Linzer Tarts', 'images/cookies/sweet.jpg', 'Traditional jam-filled tarts.', '$14.50/half dozen')
-oatmeal_muffin = BakedGoods.new('muffins', 'Oatmeal Muffins', 'images/muffins/oat.jpg', 'Healthy whole wheat, honey and brown sugar muffin.', '$4.50/each')
-sesame_bread = BakedGoods.new('bread', 'Sesame Seed Bread', 'images/bread/sesame.jpg', 'Crusty, freshly baked sesame bread.', '$7.50/loaf')
-raspberry_chocolate = BakedGoods.new('cake', 'Raspberry Chocolate Cake', 'images/cake/sweet.jpg', 'Tryly decadent cake with layers of dark chocolate filling.', '$52.00 each')
-assorted_bread = BakedGoods.new('bread', 'Assorted Bread', 'images/bread/bread4.jpg', 'Freshly baked loaves. Choose from a large assortment which includes fruit and nuts, grains, whole wheat.', '$7.50/loaf')
-chocolate_muffin = BakedGoods.new('muffins', 'Chocolate Muffin', 'images/muffins/choco.jpg', 'Rich and fulfilling chocolate muffin with chocolate chip morsels.', '$4.50/each')
-vanilla_muffins =  BakedGoods.new('muffins', 'Cream Vanilla Muffin', 'images/muffins/cream.jpg', 'Addictive muffins with cream and vanilla beans.', '$4.50/each')
-cranberry_muffin = BakedGoods.new('muffins', 'Cranberry Muffin', 'images/muffin/cranberry.jpg', 'Sure to be your new favorite.', '$4.50/each')
-chocolate_cupcake = BakedGoods.new('cake', 'Chocolate Cupcake', 'images/cake/cupcake2.jpg', 'Light and moist, baked fresh daily.', '$4.50/each')
-green_tea = BakedGoods.new('cookies', 'Green Tea Cookies', 'images/cookies/green.jpg', 'Perfect with a cup of your favorite beverage.', '$8.50/half dozen')
-macrons = BakedGoods.new('cookies', 'Macrons', 'images/cookie/macron.jpg', 'Jewelled macrons of rainbow colors.', '$10.50/half dozen')
-baguette = BakedGoods.new('bread', 'French Baguette', 'images/cake/sweet.jpg', 'Crusty French Baguette, freshly baked daily.', '$4.50/each')
-whole_wheat_rolls = BakedGoods.new('bread', 'Whole Wheat Rolls', 'images/cake/sweet.jpg', 'Light and fluffy rolls, made with 100% whole wheat.', '$3.00/2 rolls')
-cupcakes = BakedGoods.new('cake', 'Cupcakes', 'images/cake/sweet.jpg', 'Assorted cupcakes.', '$5.50/each')
+$friendly_bakery = Bakery.new()
+$friendly_bakery.addItems(red_velvet)
+$friendly_bakery.addItems(linzer_tart)
+$friendly_bakery.addItems(oatmeal_muffin)
+$friendly_bakery.addItems(sesame_bread)
+$friendly_bakery.addItems(raspberry_chocolate)
+$friendly_bakery.addItems(assorted_bread)
+$friendly_bakery.addItems(chocolate_muffin)
+$friendly_bakery.addItems(vanilla_muffin)
+$friendly_bakery.addItems(cranberry_muffin)
+$friendly_bakery.addItems(chocolate_cupcake)
+$friendly_bakery.addItems(green_tea)
+$friendly_bakery.addItems(macrons)
+$friendly_bakery.addItems(whole_wheat_rolls)
+$friendly_bakery.addItems(vanilla_cupcakes)
 
-$nenz_bakery = Bakery.new()
-$nenz_bakery.addItems(chocolate_chip)
-$nenz_bakery.addItems(oatmeal_cookie)
-$nenz_bakery.addItems(blueberry_muffin)
-$nenz_bakery.addItems(birthday_cake)
-$nenz_bakery.addItems(baguette)
-$nenz_bakery.addItems(whole_wheat_rolls)
-$nenz_bakery.addItems(cupcakes)

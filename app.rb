@@ -10,7 +10,10 @@ end
 
 
 get '/products' do
-    @cookies = $nenz_bakery.cookies
+    @cookies = $friendly_bakery.cookies
+    @muffins = $friendly_bakery.muffins
+    @cake = $friendly_bakery.cake
+    @bread = $friendly_bakery.bread
     erb :products
 end
 
