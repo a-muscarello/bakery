@@ -1,0 +1,196 @@
+/* 
+font-family: 'Quattrocento', serif;
+font-family: 'Niconne', cursive;
+font-family: 'Prata', serif; */
+
+body {
+	background-image: url(./images/marzipan.jpg);
+	width: auto;
+	height: auto;
+	background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Allura', cursive;
+    font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+.container {
+	display: flex;
+}
+
+.logo{
+	height: 50px;
+	width: 50px;
+	align-items: center;
+}
+
+.logo-background{
+	background-color: rgb(101, 123, 143);
+	width: 80px;
+	border-radius: 20px;
+}
+
+#title{
+	justify-content: flex-end;
+	flex-direction: column;
+}
+
+#title-text{
+	margin: 0 auto;
+}
+
+h1{
+	margin: 2px 5px;
+	display: block;
+	font-size: 30px;
+    color: powderblue;
+}
+
+h5{
+	display: block;
+	text-align: center;
+	color: rgb(228, 218, 238);
+	margin: 2px 5px;
+}
+
+nav {
+    align-items: center;
+   /* position: fixed;*/
+}
+
+nav ul {
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li {
+    display: inline-block;
+    margin: 5px;
+}
+
+.information a {
+    color: rgb(182, 173, 173);
+    margin: 50px 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    align-items: center;
+}
+
+a:link {
+	text-decoration: none;
+}
+
+a:hover, a:active {
+    background-color: rgb(164, 219, 151);
+}
+
+img {
+	position: relative;
+	display: inline-block;
+	border-radius: 10px;
+	width: 250px;
+	height: 200px;
+}
+
+p {
+	color: rgb(138, 179, 179);
+	font-size: 20px;
+	text-align: justify;
+}
+
+.text {
+	width: 40%;
+	margin: 50px auto;
+}
+/* 
+.mainbox {
+	margin: 100px 0;
+}
+
+.secondbox {
+	margin-top: 60px 0;
+}
+
+.image-row {
+    margin: 0 auto;
+}
+
+.image-second-row {
+	margin: 0 auto;
+}
+
+.gallery {
+	display: inline-block;
+	margin: 0 60px;
+} 
+
+
+.show {
+	animation: fadeIn 3s forwards;	
+}
+
+.hide {
+	animation: hide 600ms forwards;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes show {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes hide {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+} */
+
+.mediainfo {
+	justify-content: flex-end;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 10px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 10px;
+  border-radius: 30%;
+  position: right;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: rgb(144, 170, 228);
+  color: rgb(177, 209, 224);
+}
+
+.fa-twitter {
+  background: rgb(149, 181, 206);
+  color: rgb(168, 218, 207);
+}
+
+.fa-instagram {
+  background: #9ec7da;
+  color: rgb(163, 191, 218);
+}
+
+footer {
+	color: rgb(130, 187, 201);
+	text-align: center;
+}
