@@ -58,7 +58,7 @@ cranberry_muffin = BakedGoods.new('muffins', 'Cranberry Muffin', 'images/muffin/
 chocolate_cupcake = BakedGoods.new('cake', 'Chocolate Cupcake', 'images/cake/cupcake2.jpg', 'Light and moist, baked fresh daily.', '$4.50/each')
 green_tea = BakedGoods.new('cookies', 'Green Tea Cookies', 'images/cookies/green.jpg', 'Perfect with a cup of your favorite beverage.', '$8.50/half dozen')
 macrons = BakedGoods.new('cookies', 'Macrons', 'images/cookie/macron.jpg', 'Jewelled macrons of rainbow colors.', '$10.50/half dozen')
-baguette = BakedGoods.new('bread', 'French Baguette', 'images/cake/sweet.jpg', 'Crusty French Baguette, freshly baked daily.', '$5.50/each')
+baguette = BakedGoods.new('bread', 'French Baguette', 'images/cake/sweet.jpg', 'Crusty French Baguette, freshly baked daily.', '$6.50/each')
 whole_wheat_rolls = BakedGoods.new('bread', 'Whole Wheat Rolls', 'images/cake/sweet.jpg', 'Light and fluffy rolls, made with 100% whole wheat.', '$3.00/2 rolls')
 cupcakes = BakedGoods.new('cake', 'Cupcakes', 'images/cake/sweet.jpg', 'Assorted cupcakes.', '$5.50/each')
 
