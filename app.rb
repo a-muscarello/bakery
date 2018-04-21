@@ -9,6 +9,11 @@ get '/' do
 end
 
 
+get '/index' do
+    erb :index
+end
+
+
 get '/products' do
     @cookies = $friendly_bakery.cookies
     @muffins = $friendly_bakery.muffins

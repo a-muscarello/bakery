@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Allura');
-@import url('https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css" rel="stylesheet')
+
 /* 
 font-family: 'Quattrocento', serif;
 font-family: 'Niconne', cursive;
@@ -14,23 +14,35 @@ body {
     font-family: 'Alegreya Sans SC', sans-serif;
 }
 
-#picker_box {
-    background-color: lightslategrey !important;
+.container {
+    width: 100%;
+    margin: 0 auto;
 }
 
-.container {
-    width: 750px;
-    margin: 0 auto;
+.navbar {
+	align-items: justify;
+    background-color: black; 
+    margin-bottom: 20px;
+}
+
+.nav1{
+    flex-flow: row nowrap;
+    justify-content: flex-start;
 }
 
 .logo-background{
 	background-color: rgb(101, 123, 143);
-	width: 80px;
-	border-radius: 20px;
+	width: 100%;
+    border-radius: 20px;
 }
 
-#title{
-	text-align: center;
+.responsive-img {
+    width: 100%;
+}
+
+.col_s4 {
+    width: 200px;
+    height: 300px;
 }
 
 #title-text{
@@ -45,42 +57,16 @@ h1{
     color: powderblue;
 }
 
-h5{
+h5, h6{
 	font-size: 20px;
 	text-align: center;
 	color: rgb(228, 218, 238);
 	margin: 2px 5px;
 }
 
-#navbar {
-	align-items: justify;
-	background-color: black !important; 
-   /* position: fixed;*/
-}
-
-.navbar container {
-    list-style: none;
-    justify-content: space-between;
-    align-items: center;
-    background-color: black !important;
-}
-
-.logo-background {
-    max-width: 100%;
-    height: auto;
-}
-
 li {
     display: inline-block;
     margin: 5px;
-}
-
-.information a {
-    color: rgb(182, 173, 173);
-    margin: 50px 10px;
-    font-size: 1.5rem;
-    font-weight: bold;
-    align-items: center;
 }
 
 a:link {
@@ -103,7 +89,7 @@ p {
 }
 
 .thanks {
-	font-size: 25px;
+	font-size: 50px;
 }
 
 .fa {
@@ -140,3 +126,12 @@ footer {
 	color: rgb(110, 154, 165);
 	text-align: center;
 }
+.page-footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(32, 32, 43);
+    color: white;
+    text-align: center;
+ }

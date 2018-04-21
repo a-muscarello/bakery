@@ -3,29 +3,32 @@
 	<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere.</p>
 </div>
 
-<div class="row" id="picker_box">
-	<div class="col s3">
-		<img class="responsive-img" id="redvelvet" src="images/cake/redvelvet.jpg">
-		<img class="responsive-img" id="linzer" src="images/cookies/linzer.jpg">
-		<img class="responsive-img" id="oat" src="images/muffins/oat.jpg">
-		<img class="responsive-img" id="sesame" src="images/bread/sesame.jpg">
-	</div>
-</div>
+<div class="row">
+	<div class="col s12 m6 l3">
+	<% @cookies.each do |cookies| %>
+		<h1> <%= cookies.type %> </h1>
+		<h1> <%= cookies.name %> <h1>
+		<img class="responsive-img" src="<%= cookies.image %>">
+		<h1> <%= cookies.price %> <h1>
+	<% end %> 
+	
+<% @muffins.each do |muffins| %>
+	<h1> <%= muffins.type %> </h1>
+	<h1> <%= muffins.name %> <h1>
+	<img class="responsive-img" src="<%= muffins.image %>">
+	<h1> <%= muffins.price %> <h1>
+<% end %> 
 
-<div class="row" id="picker_box">
-	<div class="col s3">
-		<img class="responsive-img" id="sweet" src="images/cake/sweet.jpg">
-		<img class="responsive-img" id="bread4" src="images/bread/bread4.jpg">
-		<img class="responsive-img" id="choco" src="images/muffins/choco.jpg">
-		<img class="responsive-img" id="cream" src="images/muffins/cream.jpg">
-	</div>
-</div>
+<% @cake.each do |cake| %>
+	<h1> <%= cake.type %> </h1>
+	<h1> <%= cake.name %> <h1>
+	<img class="responsive-img" src="<%= cake.image %>">
+	<h1> <%= cake.price %> <h1>
+<% end %> 
 
-<div class="row" id="picker_box">
-	<div class="col s3">
-		<img class="responsive-img" id="cranberry" src="images/muffins/cranberry.jpg">
-		<img class="responsive-img" id="cupcake2" src="images/cake/cupcake2.jpg">
-		<img class="responsive-img" id="green" src="images/cookies/green.jpg">
-		<img class="responsive-img" id="macrons" src="images/cookies/macrons.jpg">
-	</div>
-</div>
+<% @bread.each do |bread| %>
+	<h1> <%= bread.type %> </h1>
+	<h1> <%= bread.name %> <h1>
+	<img class="responsive-img" src="<%= bread.image %>">
+	<h1> <%= bread.price %> <h1>
+<% end %> 
