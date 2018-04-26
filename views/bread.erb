@@ -1,4 +1,5 @@
 
+
 <div class="hero_image"></div>
 
 <h2>Our Products</h2>
@@ -8,27 +9,6 @@
 
 <div class="row">
 	<div class="gallery">
-	<% @cookies.each do |cookies| %>
-		<h1> <%= cookies.type %> </h1>
-		<h1> <%= cookies.name %> <h1>
-		<img class="responsive-img" src="<%= cookies.image %>">
-		<h1> <%= cookies.price %> <h1>
-	<% end %> 
-		
-	<% @muffins.each do |muffins| %>
-		<h1> <%= muffins.type %> </h1>
-		<h1> <%= muffins.name %> <h1>
-		<img class="responsive-img" src="<%= muffins.image %>">
-		<h1> <%= muffins.price %> <h1>
-	<% end %> 
-
-	<% @cake.each do |cake| %>
-		<h1> <%= cake.type %> </h1>
-		<h1> <%= cake.name %> <h1>
-		<img class="responsive-img" src="<%= cake.image %>">
-		<h1> <%= cake.price %> <h1>
-	<% end %> 
-
 	<% @bread.each do |bread| %>
 		<h1> <%= bread.type %> </h1>
 		<h1> <%= bread.name %> <h1>

@@ -14,22 +14,28 @@ get '/index' do
 end
 
 
-get '/products' do
-    @cookies = $friendly_bakery.cookies
-    @muffins = $friendly_bakery.muffins
+get '/cake' do
     @cake = $friendly_bakery.cake
-    @bread = $friendly_bakery.bread
-    erb :products
+    erb :cake
 end
 
+get '/cookies' do
+    @cookies = $friendly_bakery.cookies
+    erb :cookies
+end
+
+get '/muffins' do
+    @muffins = $friendly_bakery.muffins
+    erb :muffins
+end
+
+get '/bread' do
+    @bread = $friendly_bakery.bread
+    erb :bread
+end
 
 get '/about' do
     erb :about
-end
-
-
-get '/cafe' do 
-    erb :cafe
 end
 
 

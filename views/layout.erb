@@ -12,18 +12,21 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 
+		<link rel="stylesheet" href="/css/style.css">
+
 	</head>
 	<body>
-		<div class="container" id="title">
+		
+	
+	<header>
+	<div class="container">
+	<div id="title">
 			<div id="title-text">
 				<h1>Friendly Bakery</h1>
 				<p><em>Truly sublime products to indulge all your senses</em></p>
 			</div>
 		</div>
-		
-		
-	<header>
-	
+	</div>
 		<nav class="navbar navbar-expand navbar-dark bg-dark">
 		
 		<div class="collapse navbar-collapse" id="nav1">
@@ -35,7 +38,16 @@
 					<a class="nav-link" href="/about">About Us</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="/products">Products</a>
+					<a class="nav-link" href="/cake">Cake</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="cookies">Cookies</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="/muffins">Muffins</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="/bread">Bread</a>
 				</li>
 			</ul>
 			<form class="form-inline my-2 my-md-0">
@@ -43,19 +55,9 @@
 			</form>
 		</div>
 		</nav>
-		
-	<div class="main">
-		<div class="container">
-			<div class="logo-background ">
-				<img class="responsive-img" src="images/bakery/cupcake3.jpg">
-			</div>
-		</div> 
-	</div> 
+
 	</header>
-
-
-<%= yield %>
-
+	<%= yield %>
 
 
 	<footer class="page-footer">
@@ -64,9 +66,9 @@
 		<h5 class="footer-text">Contact Us</h5>
 			<div>
 				<ul>
-					<li class="col s4">Address: <br> 212 Main Street <br> New York NY 10038</li>
-					<li class="col s4">Telephone: <br> 917 545 3282</li>
-					<li class="col s4">Hours: <br> M-F 6:30 AM - 8 PM <br> Sat-Sun 9 AM - 7 PM</li>
+					<li class="footer-info">Address: <br> 212 Main Street <br> New York NY 10038</li>
+					<li class="footer-info">Telephone: <br> 917 545 3282</li>
+					<li class="footer-info">Hours: <br> M-F 6:30 AM - 8 PM <br> Sat-Sun 9 AM - 7 PM</li>
 				</ul>
 			</div>	
 		</div>
@@ -80,11 +82,10 @@
 		</div>
 	</div>
 	</footer>
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 	
-		<script type="text/javascript" src="main.js"></script>
 		</div>
 	</body>
 </html>

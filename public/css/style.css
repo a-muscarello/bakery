@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Allura');
 
 /* 
@@ -21,7 +22,7 @@ body {
 
 .navbar {
 	align-items: justify;
-    background-color: black; 
+    background-color: white; 
     margin-bottom: 20px;
 }
 
@@ -30,19 +31,14 @@ body {
     justify-content: flex-start;
 }
 
-.logo-background{
-	background-color: rgb(101, 123, 143);
-	width: 100%;
-    border-radius: 20px;
+img {
+   max-width: 100%;
+   margin-bottom: 110px;
 }
 
-.responsive-img {
-    width: 100%;
-}
-
-.col_s4 {
-    width: 200px;
-    height: 300px;
+.gallery {
+    width: 300px;
+    height: 500px;
 }
 
 #title-text{
@@ -60,7 +56,7 @@ h1{
 h5, h6{
 	font-size: 20px;
 	text-align: center;
-	color: rgb(228, 218, 238);
+	color: white;
 	margin: 2px 5px;
 }
 
@@ -79,7 +75,7 @@ a:hover, a:active {
 
 p {
 	color: rgb(138, 179, 179);
-	font-size: 10px;
+	font-size: 16px;
 	text-align: center;
 }
 
@@ -92,46 +88,39 @@ p {
 	font-size: 50px;
 }
 
-.fa {
-  padding: 10px;
-  font-size: 30px;
-  width: 10px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 10px;
-  border-radius: 30%;
-  position: right;
-}
-
 .fa:hover {
-  opacity: 0.7;
+    opacity: 0.7;
 }
 
-.fa-facebook {
-  background: rgb(144, 170, 228);
-  color: rgb(177, 209, 224);
+.fa-facebook { 
+    color: rgb(168, 218, 207); 
 }
 
 .fa-twitter {
-  background: rgb(149, 181, 206);
-  color: rgb(168, 218, 207);
+    color: rgb(168, 218, 207);
 }
 
 .fa-instagram {
-  background: #9ec7da;
-  color: rgb(163, 191, 218);
+    color: rgb(163, 191, 218);
+}
+/* Page setup */
+.hero_image {
+    background-image: url("/images/bakery/cupcake.jpg");
+    background-size: cover;
+    height: 100vh;
+    margin-top: -20px;
 }
 
-footer {
-	color: rgb(110, 154, 165);
-	text-align: center;
-}
 .page-footer {
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
     background-color: rgb(32, 32, 43);
-    color: white;
     text-align: center;
+    color: white;
+ }
+
+ .footer-info {
+     align-items: center;
  }

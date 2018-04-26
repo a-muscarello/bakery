@@ -1,39 +1,19 @@
 
+
 <div class="hero_image"></div>
 
-<h2>Our Products</h2>
+<h2>Our Cakes</h2>
 <div class="text">
 	<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere.</p>
 </div>
 
 <div class="row">
 	<div class="gallery">
-	<% @cookies.each do |cookies| %>
-		<h1> <%= cookies.type %> </h1>
-		<h1> <%= cookies.name %> <h1>
-		<img class="responsive-img" src="<%= cookies.image %>">
-		<h1> <%= cookies.price %> <h1>
-	<% end %> 
-		
-	<% @muffins.each do |muffins| %>
-		<h1> <%= muffins.type %> </h1>
-		<h1> <%= muffins.name %> <h1>
-		<img class="responsive-img" src="<%= muffins.image %>">
-		<h1> <%= muffins.price %> <h1>
-	<% end %> 
-
 	<% @cake.each do |cake| %>
 		<h1> <%= cake.type %> </h1>
 		<h1> <%= cake.name %> <h1>
 		<img class="responsive-img" src="<%= cake.image %>">
 		<h1> <%= cake.price %> <h1>
-	<% end %> 
-
-	<% @bread.each do |bread| %>
-		<h1> <%= bread.type %> </h1>
-		<h1> <%= bread.name %> <h1>
-		<img class="responsive-img" src="<%= bread.image %>">
-		<h1> <%= bread.price %> <h1>
 	<% end %> 
 	</div>
 </div>
