@@ -24,7 +24,7 @@ Used JavaScript to change background colors of main div. Created Github reposito
 Features:
 Materialize layout with flexbox structure.
 
-<img class="responsive-img" src="<%= bakery1.png.image %>">
+<img class="responsive-img" src="images/bakery1.png">
 
 Acknowledgements:
 Prexel
