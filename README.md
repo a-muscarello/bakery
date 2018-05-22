@@ -3,6 +3,9 @@ Bakery Project
 Designing a fullstack bakery website, offering items for sale as well as providing catalogue of products available upon email request.
 
 
+This was part of a work project designed to utilize and incorporate skills learned - listed below. 
+
+
 Utilizes:
 SendGrid API 
 HTML/CSS
@@ -27,3 +30,4 @@ Prexel
 Pixabay
 SendGrid
 Bootstrap
+Materialize
