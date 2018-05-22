@@ -5,9 +5,9 @@ Designing a fullstack bakery website, offering items for sale as well as providi
 
 Utilizes:
 SendGrid API 
+HTML/CSS
 JS
 Materialize
-CSS
 
 
 Work scope:
