@@ -50,7 +50,7 @@ green_tea = BakedGoods.new('cookies', 'Green Tea Cookies', 'images/cookies/green
 macrons = BakedGoods.new('cookies', 'Macrons', 'images/cookies/macrons.jpg', '$10.50/half dozen')
 baguette = BakedGoods.new('bread', 'French Baguette', 'images/bread/french.jpg', '$4.50/each')
 whole_wheat_rolls = BakedGoods.new('bread', 'Whole Wheat Rolls', 'images/bread/rolls2.jpg', '$3.00/2 rolls')
-vanilla_cupcakes = BakedGoods.new('cake', 'Cupcakes', 'images/bakery/cupcake3.jpg', '$5.50/each')
+vanilla_cupcakes = BakedGoods.new('cake', 'Vanilla Cupcake', 'images/bakery/cupcake.jpg', '$5.50/each')
 
 $friendly_bakery = Bakery.new()
 $friendly_bakery.addItems(red_velvet)
